@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom In/Out Image</title>
+    <style>
+        .zoom{
+            background-color: rgb(6, 158, 6);
+            color: white;
+            border-radius: 20px;
+            font-size: 30px;
+            padding: 10px 10px 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+<img width="300px" id="bike" src="./img/alonso-talbert-s6DiDMLK0jk-unsplash.jpg" alt="Image Not Found"><br><br>
+<button class="zoom" onclick="zoomIn()">Zoom In</button>
+<button class="zoom" onclick="zoomOut()">Zoom Out</button>
+
+    <script>
+        function zoomIn(){
+            document.getElementById("bike").style.width="500px"
+        }
+        function zoomOut(){
+            document.getElementById("bike").style.width="300px"
+        }
+    </script>
+</body>
+
+</html>
